@@ -17,7 +17,6 @@ const MovieForm = ({ addMovie }) => {
     // HANDLE SUBMIT
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(movieData)
         if (!movieData?.title.trim() || !movieData?.title.trim()) return;
         addMovie(movieData)
         setMovieData({ ...movieData, title: "", ott: "" });

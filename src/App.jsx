@@ -3,10 +3,10 @@ import MovieWatch from "./components/MovieWatch"
 
 const App = () => {
   return (
-    <div className="bg-slate-100">
+    <section className="flex justify-center">
       <MovieWatch />
       {/* <UserList /> */}
-    </div>
+    </section>
   )
 }
 
