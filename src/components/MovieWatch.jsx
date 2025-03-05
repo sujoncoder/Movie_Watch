@@ -49,8 +49,11 @@ const MovieWatch = () => {
 
     return (
         <div className="w-1/2 border rounded-lg p-4 mx-auto bg-slate-900 shadow my-10">
+            {/* HEADING COMPONENT  */}
             <Heading />
+
             <div className="mt-10">
+
                 {/* MOVIES FORM COMPONENT  */}
                 <MovieForm addMovie={addMovie} />
 

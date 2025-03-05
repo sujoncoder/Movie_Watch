@@ -9,13 +9,14 @@ const MovieItem = ({ movie, rateMovie, toggleWatched, deleteMovie }) => {
     };
 
     return (
-        <li className="flex justify-between items-center p-2">
-            <div>
-                <span className={`text-lg font-semibold ${movie.watched ? "line-through text-gray-400" : "text-white"}`}>
+        <li className="flex justify-between items-center space-y-4">
+            <div className="flex items-center">
+                <span className={`text-xl font-semibold ${movie.watched ? "line-through text-gray-400" : "text-white"}`}>
                     {movie.title}
                 </span>
 
-                <span className="text-gray-300"> on {movie?.ott}</span>
+                <span className="bg-cyan-200 px-2 py-0.5 rounded-full ml-2">on {movie?.ott}</span>
+
                 {movie?.rating && <span className="ml-2 text-yellow-500">⭐ {movie.rating}/5</span>}
             </div>
 

@@ -51,7 +51,7 @@ const MovieForm = ({ addMovie }) => {
 
             <button
                 type='submit'
-                className='text-white bg-blue-400 active:bg-blue-500 px-4 py-2 rounded'
+                className='text-white font-semibold bg-blue-400 active:bg-blue-500 px-4 py-2 rounded'
             >
                 Add
             </button>
